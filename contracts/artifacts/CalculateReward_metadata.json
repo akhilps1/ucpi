@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_minRewardPoints",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_maxRewardPoints",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/CalculateReward.sol": "CalculateReward"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/CalculateReward.sol": {
+			"keccak256": "0x7d2361413a17f7c333c5290d0762c1e6c80cd23655b7bc3fbfadd2c52e391f5b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0ce607942adfad77f66cec0098e7e966e1b8f20191598a49eb9a7bfdb6915840",
+				"dweb:/ipfs/QmYDaDMH5Tju9X1YpuQB1NXVrEEL5G7Bqcp9Ndnsta59aC"
+			]
+		}
+	},
+	"version": 1
+}
