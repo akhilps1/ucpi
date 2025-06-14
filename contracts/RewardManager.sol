@@ -25,7 +25,7 @@ contract RewardManager is Initializable, OwnableUpgradeable {
         emit RewardDistributed(user, reward);
     }
 
-    function calculateReward(uint256 amount) external view returns (uint256) {
+    function calculateReward(uint256 amount) external view onlyOwner returns  (uint256) {
         uint256 reward = amount * platformFee / 10000;
         return reward > maxRewardPoints ? maxRewardPoints : reward;
     }

@@ -380,11 +380,11 @@
 			]
 		},
 		"contracts/RewardManager.sol": {
-			"keccak256": "0x3a126f9d1a804d816a923adcaf0677f548db25e77dfca6327ff7ad419d822eec",
+			"keccak256": "0x3243fa595186fcdef314c73bcfdbd41c9bd8b167e70a83ff5342c8d0f0ad0c03",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://137aaf5bbf102efc12f174b710f6f49d763d19518f9c0dc0008fb25f10d25122",
-				"dweb:/ipfs/QmSwaV2VxCboAohJMtjJEPkQoC2DWdTATasLr2BrNyL2fx"
+				"bzz-raw://8ec48fd50e024997a49269037eb7096e1083191f816ad1a0cf66509d5023415a",
+				"dweb:/ipfs/QmXEe9u4saFd25FDDUyYB3zVCmAAdHfCwhWpGgvLk4c2nu"
 			]
 		}
 	},
