@@ -23,14 +23,17 @@ contract UCPI is Initializable, UUPSUpgradeable, OwnableUpgradeable {
         permissions = Permissions(_permissions);
         rewardManager = RewardManager(_rewardManager);
         logger = Logger(_logger);
+        
+        
     }
 
     function performAction(address user,  uint256 amount, uint48 timestamp, string calldata txHash, address token) external {
         require(permissions.hasAccess(msg.sender, Permissions.Access.Create), "No access");
 
         uint256 reward = rewardManager.calculateReward(amount);
-        rewardManager.distributeReward(user, amount, reward);
         logger.logTransaction(timestamp, user, amount, amount * rewardManager.platformFee() / 10000, reward, txHash, token);
+        rewardManager.distributeReward(user, amount, reward);
+        
     }
 
     function _authorizeUpgrade(address newImplementation) internal override onlyOwner {}

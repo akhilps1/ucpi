@@ -94,6 +94,11 @@
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
 					}
 				],
 				"name": "calculateReward",
@@ -195,6 +200,45 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "rewardToken",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					}
+				],
+				"name": "setRewardToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_ucpi",
+						"type": "address"
+					}
+				],
+				"name": "setUCPIContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -208,19 +252,13 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "ucpiContract",
+				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"name": "userRewardPoints",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -355,6 +393,14 @@
 				"dweb:/ipfs/QmWRMh4Q9DpaU9GvsiXmDdoNYMyyece9if7hnfLz7uqzWM"
 			]
 		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xe06a3f08a987af6ad2e1c1e774405d4fe08f1694b67517438b467cecf0da0ef7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://df6f0c459663c9858b6cba2cda1d14a7d05a985bed6d2de72bd8e78c25ee79db",
+				"dweb:/ipfs/QmeTTxZ7qVk9rjEv2R4CpCwdf8UMCcRqDNMvzNxHc3Fnn9"
+			]
+		},
 		"@openzeppelin/contracts/utils/Address.sol": {
 			"keccak256": "0xaaa1d17c1129b127a4a401db2fbd72960e2671474be3d08cae71ccdc42f7624c",
 			"license": "MIT",
@@ -380,11 +426,11 @@
 			]
 		},
 		"contracts/RewardManager.sol": {
-			"keccak256": "0x3243fa595186fcdef314c73bcfdbd41c9bd8b167e70a83ff5342c8d0f0ad0c03",
+			"keccak256": "0xcdaffd2de2f3c9bf46b6ccfb929bda033e2649d5a65942cb1e014d3a89732585",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8ec48fd50e024997a49269037eb7096e1083191f816ad1a0cf66509d5023415a",
-				"dweb:/ipfs/QmXEe9u4saFd25FDDUyYB3zVCmAAdHfCwhWpGgvLk4c2nu"
+				"bzz-raw://23fba182a013a52c45f33aad1b68a3344f48cbd331c969b496234ce1de31414e",
+				"dweb:/ipfs/QmR6UZDfN7cRPbfwAo1z2GeydJVhb5uf1MZt5pyn6bwdRB"
 			]
 		}
 	},
