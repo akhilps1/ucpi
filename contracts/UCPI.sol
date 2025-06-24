@@ -30,7 +30,7 @@ contract UCPI is Initializable, UUPSUpgradeable, OwnableUpgradeable {
     function performAction(address user,  uint256 amount, uint48 timestamp, string calldata txHash, address token) external {
         require(permissions.hasAccess(msg.sender, Permissions.Access.Create), "No access");
 
-        uint256 reward = rewardManager.calculateReward(amount);
+        uint256 reward = rewardManager.calculateReward(amount, user);
         logger.logTransaction(timestamp, user, amount, amount * rewardManager.platformFee() / 10000, reward, txHash, token);
         rewardManager.distributeReward(user, amount, reward);
         
